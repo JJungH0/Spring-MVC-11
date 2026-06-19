@@ -1,0 +1,28 @@
+<!--
+    spring-boot-stater-web 의존성 추가 :
+    - WebMvcAutoConfiguration 활성화
+    - 내부의 WelcomePageHandlerMapping이라는 클래스가 처리
+        - 여기서 기본적으로 다음 경로들을 정적 리소스 디렉토리로 등록
+        - classpath: /META-INF/resources/
+        - classpath: /resources/
+        - classpath: /static/
+        - classpath: /pulibc/
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul>
+    <li>상품 관리</li>
+    <ul>
+        <li><a href="/servlet/v1/upload">서블릿 파일 업로드1</a></li>
+        <li><a href="/servlet/v2/upload">서블릿 파일 업로드2</a></li>
+        <li><a href="/spring/upload">스프링 파일 업로드</a></li>
+        <li><a href="/items/new">상품 - 파일, 이미지 업로드</a></li>
+    </ul>
+</ul>
+</body>
+</html>
